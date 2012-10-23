@@ -18,13 +18,10 @@
 				
 		<article id="<?php the_ID(); ?>" class="post">
 
+	<?php if ( is_archive() || is_search() || !is_single() ) : // Only display excerpts for archives and search. ?>
 			<h2 class="entry-title"><?php print_post_title(); ?></h2>
-
-
-
-	<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
 			<div class="entry-summary">
-				<?php the_excerpt(); ?>
+				<?php echo get_the_content_first_paragraph(); ?>
 			</div><!-- .entry-summary -->
 	<?php else : ?>
 			<div class="entry-content">
@@ -33,7 +30,7 @@
 			</div><!-- .entry-content -->
 	<?php endif; ?>
 
-
+			<p><small><time datetime="<?php echo date('Y-m-d'); ?>" id="top_time"><?php the_time('F d, Y'); ?></time></small></p>
 			
 			
 			<aside class="kudo kudoable" id="<?php the_ID(); ?>">

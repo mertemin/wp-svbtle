@@ -140,3 +140,92 @@ li.share-end{display: none !important; clear: none !important;}
 .sharedaddy {height: 24px!important; clear: both; overflow: hidden}
 .sharedaddy ul{margin: 0; padding: 0; list-style: none }
 .sharedaddy li{float: left; margin: 0 !important;  list-style: none !important; padding: 0 !important}
+
+
+/* Edited by mertemin */
+div#bb_top {
+	height: 5px;
+	background-color: #000;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 999999;
+}
+
+div#bb_bottom {
+	height: 5px;
+	background-color: #000;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 999999;
+}
+
+div.about {
+	margin-left: 25px;
+	margin-top: 75px;
+	width: 75%;
+}
+
+div.about #svbtle_linkback_edited {
+	font-size:15px;
+	letter-spacing:0;
+	text-transform:uppercase;
+	font-family:"freight-sans-pro",sans-serif;
+	font-weight:900;
+	line-height:15px;
+	background-color:rgba(255,255,255,0.7);
+	height:30px;
+	z-index:9999;
+	border-radius:5px
+}
+
+div.about #svbtle_linkback_edited span.logo_square {
+	margin-right:5px
+}
+
+header#sidebar div.about h2 {
+	font-weight: 400; 
+	font-size: 12px;
+	line-height: 26px;
+	color: #999;
+	-webkit-font-smoothing: antialiased;
+	margin-bottom: 0;
+}
+
+header.page_title {
+	padding-top: 140px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+header.page_title h2 {
+	margin-top: 0;
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 72px;
+	max-width: 80%;
+}
+
+@media all and (max-width:630px) {
+	header.page_title {
+		padding-left: 20px;
+		padding-top: 40px;
+	}
+
+	header.page_title h2 {
+		font-size: 36px;
+		line-height: 36px;
+	}
+	
+	div.about {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5px;
+	}
+}

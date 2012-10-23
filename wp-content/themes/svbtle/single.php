@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-<header id="begin">
-    <time datetime="<?php echo date('Y-m-d'); ?>" id="top_time"><?php the_time('F d, Y'); ?></time>
+<header class="page_title">
+	<h2><?php print_post_title() ?></h2>
 </header>
 
 <?php get_template_part( 'loop', 'index' ); ?>
@@ -21,7 +21,7 @@ get_header(); ?>
 
 <nav class="pagination">
   <span class="prev">
-    <a href="<?php echo home_url( '/' ); ?>" class="back_to_blog">←&nbsp;&nbsp;&nbsp;read more</a>
+    <a href="<?php echo home_url('/blog'); ?>" class="back_to_blog">←&nbsp;&nbsp;&nbsp;read more</a>
   </span>
 </nav>
 

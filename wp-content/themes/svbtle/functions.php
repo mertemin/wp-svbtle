@@ -504,4 +504,13 @@ function add_items($admin_bar)
     $admin_bar->add_menu( $args);
 }
 
+if(!function_exists('get_the_content_first_paragraph')) :
+function get_the_content_first_paragraph() {
+    $content = get_the_content();
+    $content = apply_filters('the_content', $content);
+    $content = str_replace(']]>', ']]&gt;', $content);
+    return substr($content, 0, strpos($content, "</p>") + 4);
+}
+endif;
+
 ?>

@@ -38,6 +38,9 @@
 		
 	</head>
 	<body <?php body_class(); ?>>
+		<div id="bb_top"></div>
+		<div id="bb_bottom"></div>
+		
 		<header id="sidebar">
 		  <aside id="logo" class="clearfix">
 		    <div class="clearfix">
@@ -108,11 +111,14 @@
 				<?php if ( is_active_sidebar( 'sidebar' ) ) dynamic_sidebar( 'sidebar' ); ?>
 
 		  </ul>
-		  <aside id="svbtle_linkback">
-		    <a href="https://github.com/gravityonmars/wp-svbtle">
-		      <span class="logo_square"><span class="logo_circle">&nbsp;</span></span>&nbsp;<span class="svbtle">wp-svbtle</span>
-		    </a>
-		  </aside>
+		  <div class="about">
+		  	<h2>This is an edited version of <a href="https://github.com/mertemin/wp-svbtle">wp-svbtle</a></h2>
+		  	<aside id="svbtle_linkback_edited">
+		  		<a href="http://svbtle.com">
+		  			<span class="logo_square"><span class="logo_circle">&nbsp;</span></span>&nbsp;<span class="svbtle">Svbtle</span>
+		  		</a>
+		  	</aside>
+		  </div>
 		</header>
 		
 		<section id="river" role="main">

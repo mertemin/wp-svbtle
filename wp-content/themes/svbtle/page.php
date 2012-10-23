@@ -10,10 +10,12 @@
 get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
+
+<header class="page_title">
+	<h2><?php print_post_title() ?></h2>
+</header>
+
 <article id="<?php the_ID(); ?>" class="post">
-	<h2>
-		<?php print_post_title() ?>
-	</h2>
 	<?php the_content( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'hbd-theme' )  ); ?>
 	
 	<h2><?php //echo get_the_category_list(', '); ?></h2>
